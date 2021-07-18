@@ -11,5 +11,4 @@ int sgn(T val)
     return (T(0) < val) - (val < T(0));
 }
 
-
 #endif // CODE_KATA_SGN_H

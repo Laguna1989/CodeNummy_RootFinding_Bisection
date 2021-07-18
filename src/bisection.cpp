@@ -1,7 +1,6 @@
 #include "bisection.hpp"
 #include "sgn.hpp"
 
-
 double calculate_mean(double L, double U)
 {
     // fake implementation
@@ -13,4 +12,3 @@ double bisect(std::function<double(double)> const& f, double L, double U, double
     // fake implementation
     return 42.0;
 }
-

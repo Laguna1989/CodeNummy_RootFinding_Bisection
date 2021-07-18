@@ -17,4 +17,6 @@ TEST_P(SgnTestFixture, CorrectValue)
 
 INSTANTIATE_TEST_SUITE_P(SgnTest, SgnTestFixture,
     ::testing::Values(std::make_tuple(0.0, 0), std::make_tuple(1.0, 1), std::make_tuple(-1.0, -1),
-        std::make_tuple(500.0, 1), std::make_tuple(-12.0, -1), std::make_tuple(std::numeric_limits<double>::max(), 1) , std::make_tuple(std::numeric_limits<double>::lowest(), -1) ));
+        std::make_tuple(500.0, 1), std::make_tuple(-12.0, -1),
+        std::make_tuple(std::numeric_limits<double>::max(), 1),
+        std::make_tuple(std::numeric_limits<double>::lowest(), -1)));
