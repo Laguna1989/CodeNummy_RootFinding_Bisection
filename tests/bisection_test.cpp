@@ -19,6 +19,20 @@ TEST(BisectionTest, FirstOrderPolynomial)
     ASSERT_LE(abs(func(x0)),  delta);
 }
 
+TEST(BisectionTest, FirstOrderPolynomialFalling)
+{
+    auto const func = [](double x){ return -(x + 1);};
+
+    double const L = -3;
+    double const U = 5;
+    double const delta = 1e-2;
+
+    double x0 = bisect(func,L,U, delta);
+    double expected_x0 = -1;
+    ASSERT_LE(abs(x0 - expected_x0), 1e-2);
+    ASSERT_LE(abs(func(x0)),  delta);
+}
+
 TEST(BisectionTest, ThirdOrderPolynomial)
 {
     auto const func = [](double x){ return (x-2)*(x-2)*(x-2);};
