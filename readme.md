@@ -18,7 +18,8 @@ interval in two halves in each iteration and to discard the half that does not c
 will stop once a sufficient precision `delta` is reached.
 
 1. Calculate the mean value of `L` and `U` as  `M = (L + U) / 2`
-2. if `abs(f(M)) <= delta` stop the iteration and use `x0 = M`
+2. if `abs(f(M)) <= delta` 
+   * stop the iteration and use `x0 = M`
 3. Check which half of the search interval to discard
     1. If `sgn(f(M)) == sgn(f(L)`
         * set `L = M`
