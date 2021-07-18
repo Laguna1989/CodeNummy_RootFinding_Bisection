@@ -11,6 +11,8 @@ rootfinding yields an approximated solution for the equation, by solving `0 = co
 
 ## Bisection
 
+![Bisection visualized](https://user-images.githubusercontent.com/2394228/126057489-3b5fd6b2-f379-4970-a213-9be8e25124aa.gif)
+
 We know that a function `f(x)` has a zero at `x0` in the range `[L;U]`. The idea of bisection is to discard the search
 interval in two halves in each iteration and to discard the half that does not contain the root. The iteration cycle
 will stop once a sufficient precision `delta` is reached.
