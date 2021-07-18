@@ -11,17 +11,18 @@ rootfinding yields an approximated solution for the equation, by solving `0 = co
 
 ## Bisection
 
-![Bisection visualized](https://user-images.githubusercontent.com/2394228/126057489-3b5fd6b2-f379-4970-a213-9be8e25124aa.gif)
+![Bisection visualized](https://user-images.githubusercontent.com/2394228/126060781-6cc3588b-0a6c-4068-805d-134a1da7ff3d.gif)
 
-We know that a function `f(x)` has a zero at `x0` in the range `[L;U]`. The idea of bisection is to discard the search
+We know that a function `f(x)` has a zero at `x0` in the range `[L;U]`. The idea of bisection is to divide the search
 interval in two halves in each iteration and to discard the half that does not contain the root. The iteration cycle
 will stop once a sufficient precision `delta` is reached.
 
 1. Calculate the mean value of `L` and `U` as  `M = (L + U) / 2`
-2. if `abs(f(M)) <= delta` 
-   * stop the iteration and use `x0 = M`
+2. Check the calculated function value is close enough to zero:
+   * If `abs(f(M)) <= delta` 
+        * stop the iteration and use `x0 = M`
 3. Check which half of the search interval to discard
-    1. If `sgn(f(M)) == sgn(f(L)`
+    1. If `sgn(f(M)) == sgn(f(L))`
         * set `L = M`
     2. Else
         * set `U = M`
@@ -48,9 +49,9 @@ Let's start with implementing the bisection algorithm.
 
 ## 1. Calculation of mean values
 
-The first step will be to implement the calculation of the mean of two values. A function function implementation can be
+The first step will be to implement the calculation of the mean of two values. A function implementation can be
 found in `src/bisection.cpp` as `calculate_mean(double L, double U)`. It is your task to write a proper implementation.
-The respective tests can be found in `tests/bisection_calculate_mean_tests.cpp`.
+The respective tests can be found in `tests/bisection_calculate_mean_test.cpp`.
 
 ## 2. Bisection
 
