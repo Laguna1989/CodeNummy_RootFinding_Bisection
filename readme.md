@@ -15,7 +15,7 @@ rootfinding yields an approximated solution for the equation, by solving `0 = co
 
 We know that a function `f(x)` has a zero at `x0` in the range `[L;U]`. The idea of bisection is to divide the search
 interval in two halves in each iteration and to discard the half that does not contain the root. The iteration cycle
-will stop once a sufficient precision `delta` is reached.
+will stop once a sufficient precision `delta` is reached (how far off is the function value from 0?).
 
 1. Calculate the mean value of `L` and `U` as  `M = (L + U) / 2`
 2. Check the calculated function value is close enough to zero:
@@ -65,3 +65,12 @@ Feel free to test the bisection with your own
 
 Note that c++ does unfortunately not provide a function to calculate the sign of a value. For this you can use the
 provided (and tested) template function in `src/sgn.hpp`
+
+
+# Outlook and brainteasers
+
+ * What happens, if 
+    * the range `[L;U]` does not contain any zero?
+    * the range `[L;U]` contains two zeros of first order? I.e. `f(x) = x*x - 2` in the range `[-2;2]`.
+    * the range contains three zeros of first order? I.e. `f(x) = (x-1) * (x-1) * (x-1) - x * x +1` in the range `[-1;4]`.
+    * the range contains one zero of second order? I.e. `f(x) = x * x` in the range `[-1;1]`.
