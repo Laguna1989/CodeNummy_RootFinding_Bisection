@@ -1,0 +1,3 @@
+use image magic to create a gif out of images:
+
+magick.exe convert -delay 200 -loop 0 -background white -alpha remove -alpha off -alpha set -dispose previous *.png ani.gif
