@@ -1,6 +1,6 @@
 # Overview
 
-This is a Code Kata about numerical rootfinding via bisection.  Please check out the
+This is a Code Nummy about numerical rootfinding via bisection.  Please check out the
 other [Code Nummies](https://github.com/Laguna1989/CodeNummies_Overview).
 
 # Theory
