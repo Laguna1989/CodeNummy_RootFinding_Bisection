@@ -1,6 +1,6 @@
 # Overview
 
-This is a Code Kata about numerical rootfinding via bisection.  Please check out the
+This is a Code Nummy about numerical rootfinding via bisection.  Please check out the
 other [Code Nummies](https://github.com/Laguna1989/CodeNummies_Overview).
 
 # Theory
@@ -52,7 +52,7 @@ Let's start with implementing the bisection algorithm.
 
 The first step will be to implement the calculation of the mean of two values. A function implementation can be
 found in `src/bisection.cpp` as `calculate_mean(double L, double U)`. It is your task to write a proper implementation.
-The respective tests can be found in `tests/bisection_calculate_mean_test.cpp`.
+The respective tests can be found in `tests/calculate_mean_test.cpp`.
 
 ## 2. Bisection
 
