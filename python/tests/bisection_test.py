@@ -1,6 +1,4 @@
 from math import cos
-from sys import setrecursionlimit
-
 from bisection import bisect
 
 
@@ -24,7 +22,6 @@ def first_order_polynomial_falling(x):
 
 
 def test_bisection_first_order_polynomial_falling():
-    setrecursionlimit(1000)
     L = -3.0
     U = 5.0
     delta = 1e-2
