@@ -1,7 +1,7 @@
 #include "bisection.hpp"
+#include "calculate_mean.hpp"
 #include "sgn.hpp"
 
-double calculate_mean(double L, double U) { return (L + U) / 2.0; }
 
 double bisect(std::function<double(double)> const& f, double L, double U, double delta)
 {
