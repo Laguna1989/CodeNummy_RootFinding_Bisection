@@ -1,2 +1,2 @@
 def calculate_mean(L, U):
-    return 42.0
+    return (L + U) / 2.0
