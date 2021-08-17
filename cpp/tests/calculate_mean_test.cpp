@@ -1,4 +1,5 @@
 #include "bisection.hpp"
+#include "calculate_mean.hpp"
 #include <gtest/gtest.h>
 
 using namespace ::testing;

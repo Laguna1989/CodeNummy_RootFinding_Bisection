@@ -51,21 +51,21 @@ Let's start with implementing the bisection algorithm.
 ## 1. Calculation of mean values
 
 The first step will be to implement the calculation of the mean of two values. A function implementation can be
-found in `src/bisection.cpp` as `calculate_mean(double L, double U)`. It is your task to write a proper implementation.
-The respective tests can be found in `tests/calculate_mean_test.cpp`.
+found in `src/calcaulate_mean` as `calculate_mean(L, U)`. It is your task to write a proper implementation.
+The respective tests can be found in `tests/calculate_mean_test`.
 
 ## 2. Bisection
 
 Now it is time for the actual bisection. replace the fake
-function `double bisect(std::function<double(double)> const& f, double L, double U, double delta)`
-in `src/bisection.cpp`. The tests in `tests/bisection_test.cpp` will show you if your implementation is correct.
+function `bisect(function, L, U, delta)`
+in `src/bisection`. The tests in `tests/bisection_test` will show you if your implementation is correct.
 
 Feel free to test the bisection with your own  
 
 ### Hint
 
-Note that c++ does unfortunately not provide a function to calculate the sign of a value. For this you can use the
-provided (and tested) template function in `src/sgn.hpp`
+Note that c++ and python do unfortunately not provide a function to calculate the sign of a value. 
+For this you can use the provided (and tested) template function in `src/sgn`
 
 
 # Outlook and brainteasers
